@@ -74,6 +74,24 @@ npm install
 
 Create a `.env` file in the `backend` directory with your environment variables (Database URI, JWT Secrets, Cloudinary keys, etc.).
 
+**Sample `backend/.env`:**
+
+```env
+PORT=8080
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+FRONTEND_URL=http://localhost:5173
+
+# Cloudinary Configuration
+CLOUDINARY_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Resend Email Configuration
+RESEND_API_KEY=your_resend_api_key
+RESEND_FROM=onboarding@resend.dev
+```
+
 ```bash
 npm run dev
 ```
@@ -87,6 +105,17 @@ In a new terminal window:
 ```bash
 cd frontend
 npm install
+```
+
+Create a `.env` file in the `frontend` directory:
+
+**Sample `frontend/.env`:**
+
+```env
+VITE_API_URL=http://localhost:8080/api
+```
+
+```bash
 npm run dev
 ```
 
