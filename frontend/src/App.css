@@ -1,17 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-
-* {
-  font-family: "Questrial", sans-serif;
-}
-
-* {
-  font-family: "Questrial", sans-serif;
-}
-
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #797979ff transparent;
+  scrollbar-color: var(--muted-foreground) transparent;
 }
 
 /* Chrome, Edge, Safari */
@@ -21,17 +11,17 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--background);
   border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #797979ff;
+  background: var(--muted-foreground);
   border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: #797979ff;
+  background: var(--foreground);
 }
 
 /* Hide arrows in Chrome, Safari, Edge, Opera */
